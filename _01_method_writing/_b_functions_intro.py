@@ -4,10 +4,28 @@ Write the function definitions for the function calls below
 from tkinter import messagebox, simpledialog, Tk
 import random
 import unittest
+import random
 
 
 # TODO Write function definitions below!
 
+def multiply(num1, num2):
+    return num1 * num2
+
+
+def str_cat(var1, var2, var3):
+    return var1 + " "+ var2 + " "+ var3
+
+
+def greater_than(num1, num2):
+    if (num1 < num2):
+        return True
+    else:
+        return False
+
+
+def get_random_number(low, high):
+    return random.randint(low, high)
 
 class FunctionTests(unittest.TestCase):
 
@@ -33,4 +51,6 @@ class FunctionTests(unittest.TestCase):
 
 
 if __name__ == '__main__':
+
     unittest.main()
+
