@@ -3,6 +3,7 @@ Write methods to represent the activities that will make the user's pet happy.
 """
 from tkinter import messagebox, simpledialog, Tk
 
+
 def Walk(petType, petHappiness):
     if petType == "Dog":
         petHappiness += 4
@@ -12,6 +13,8 @@ def Walk(petType, petHappiness):
         petHappiness -= 5
     elif petType == "Bird":
         petHappiness -= 1
+    return petHappiness
+
 
 def Feed(petType, petHappiness):
     if petType == "Dog":
@@ -22,6 +25,8 @@ def Feed(petType, petHappiness):
         petHappiness += 3
     elif petType == "Bird":
         petHappiness += 3
+    return petHappiness
+
 
 def Pet(petType, petHappiness):
     if petType == "Dog":
@@ -32,8 +37,10 @@ def Pet(petType, petHappiness):
         petHappiness -= 1
     elif petType == "Bird":
         petHappiness += 2
+    return petHappiness
 
-def Bathe(petType, petHappiness):
+
+def Bathe (petType, petHappiness):
     if petType == "Dog":
         petHappiness += 1
     elif petType == "Cat":
@@ -42,6 +49,7 @@ def Bathe(petType, petHappiness):
         petHappiness += 4
     elif petType == "Bird":
         petHappiness -= 6
+    return petHappiness
 
 if __name__ == '__main__':
     # TODO)
@@ -58,18 +66,22 @@ if __name__ == '__main__':
     window.withdraw
     petHappiness = 0
     petType = simpledialog.askstring(title="Select pet type", prompt="Would you like a: Dog, Cat, Fish, or Bird?")
-    while(petHappiness < 10):
-        print("Your pet is at happiness level: " + str(petHappiness) + " out of 10. Choose the right interactions to make them happier")
-        action = simpledialog.askstring(title="Select interaction", prompt="Would you like to: Walk, Feed, Pet, or Bathe?")
+    while (petHappiness < 10):
+        print("Your pet is at happiness level: " + str(petHappiness) + " out of 10. Choose the right interactions to "
+                                                                       "make them happier")
+        action = simpledialog.askstring(title="Select interaction", prompt="Would you like to: Walk, Feed, "
+                                                                           "Pet, or Bathe?")
         if action == "Walk":
-            Walk(petType, petHappiness)
+            petHappiness = Walk(petType, petHappiness)
         elif action == "Feed":
-            Feed(petType, petHappiness)
+            petHappiness = Feed(petType, petHappiness)
         elif action == "Pet":
-            Pet(petType, petHappiness)
+            petHappiness = Pet(petType, petHappiness)
         elif action == "Bathe":
-            Bathe(petType, petHappiness)
+            petHappiness = Bathe(petType, petHappiness)
+        else:
+            print("Walk, Feed, Pet, or Bath?")
 
-
+    print("Your pet is at happiness level: " + str(petHappiness) + " - nice job!")
 
 
