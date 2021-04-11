@@ -4,23 +4,36 @@ Go to the recipe to run the demonstration before starting this program
 
 def setup():
     # Set the size of your sketch to be a rectangle like in the recipe demonstration
-    
+    size(800, 600)
     # Call the noFill() command so all the ellipses will be transparent
+    noFill()
+    
+x = 150
+speed = 1
 
 def draw():
+    global x
+    global speed
+    
     # Use a for loop to make the first set of rings that will start in the left half
     # of the window.
-
+    for i in range(30):
+        ellipse(x, 300, i*10, i*10)
     # Make this set of rings move across the sketch to the right 
     # Hint: Make two variables, one for x and another for the speed. 
     #       Then increase x by the amount in speed.
-        
+    x = x + speed
+    
     # When the rings reach the right side of the sketch, reverse the direction so
     # they move.
     # Hint: speed = -speed */
+    if x > 450:
+        speed = -speed
 
-         
+    
     # When the rings reach the left side of the sketch, reverse the direction again
+    if x < 150:
+        speed = -speed
         
     # CHALLENGE - to finish the Amazing Rings
      
