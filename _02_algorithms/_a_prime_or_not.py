@@ -6,11 +6,12 @@ from tkinter import messagebox, simpledialog, Tk
 
 
 def is_prime(value):
-    for i in range(100):
-        if i != 1 and i != value:
-            if value % i != 0:
-                return False
-    return True
+    prime = True
+    for i in range(100000):
+        if i != 0 and i != 1 and i != value:
+            if value % i == 0:
+                prime = False
+    return prime
 
 if __name__ == '__main__':
     # TODO)
