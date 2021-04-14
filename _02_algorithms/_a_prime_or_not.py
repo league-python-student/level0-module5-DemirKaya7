@@ -7,10 +7,11 @@ from tkinter import messagebox, simpledialog, Tk
 
 def is_prime(value):
     prime = True
-    for i in range(100000):
+    for i in range(value):
         if i != 0 and i != 1 and i != value:
             if value % i == 0:
                 prime = False
+                break
     return prime
 
 if __name__ == '__main__':

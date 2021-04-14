@@ -21,7 +21,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python._c_goofy_names">
+  <component name="RunManager" selected="Python._a_prime_or_not">
     <configuration name="_a_prime_or_not" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="level0-module5-DemirKaya7" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,27 +85,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_d_happy_pet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="level0-module5-DemirKaya7" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_01_method_writing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_01_method_writing/_d_happy_pet.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="_e_houses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="level0-module5-DemirKaya7" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,13 +106,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="for_loop_gauntlet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="level0-module5-DemirKaya7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_03_nested_loops/for_loop_gauntlet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_03_nested_loops/for_loop_gauntlet/for_loop_gauntlet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python._c_goofy_names" />
-        <item itemvalue="Python._b_fibonacci" />
         <item itemvalue="Python._a_prime_or_not" />
+        <item itemvalue="Python._b_fibonacci" />
+        <item itemvalue="Python._c_goofy_names" />
+        <item itemvalue="Python.for_loop_gauntlet" />
         <item itemvalue="Python._e_houses" />
-        <item itemvalue="Python._d_happy_pet" />
       </list>
     </recent_temporary>
   </component>
